@@ -1,0 +1,39 @@
+{
+  "name": "history-boss",
+  "description": "Boss your history",
+  "keywords": [
+    "static"
+  ],
+  "version": "0.0.1",
+  "author": "Taron <taronfoxworth@gmail.com>",
+  "maintainers": [
+    "Taron Foxworth <taronfoxworth@gmail.com>"
+  ],
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taronfoxworth/history-boss"
+  },
+  "dependencies": {
+    "commander": "2.x.x",
+    "async": "0.2.x",
+    "fs-tools": "0.2.x",
+    "glob": "latest",
+    "fs-extra": "latest",
+    "ncp": "latest",
+    "inquirer": "latest",
+    "underscore": "latest",
+    "cmdify": "latest"
+  },
+  "devDependencies": {
+    "mocha": "1.8.x"
+  },
+  "main": "./lib/history-boss.js",
+  "bin": {
+    "hb": "./bin/hb"
+  },
+  "preferGlobal": true,
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
