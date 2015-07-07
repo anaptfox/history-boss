@@ -1,0 +1,17 @@
+#!/usr/bin/env osascript -l JavaScript
+
+//osascript -l JavaScript ./scripts/iterm
+
+function run(argv) {
+
+  iTerm = Application('iTerm')
+
+  iTerm.activate()
+
+  terminal = iTerm.currentTerminal()
+
+  //terminal.launch({session:'Default Session'})
+
+  terminal.currentSession().write({text:argv[0]})
+
+}
